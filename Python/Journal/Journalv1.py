@@ -1,7 +1,12 @@
 import PySimpleGUI as sg
 
 read = [[sg.I('Feb-2021.txt', key='filename', size=(50,1))], [sg.Button('READ'), sg.Button('CLOSE', key='c1')]]
-write = [[sg.T('Enter today\'s events!')], [sg.T('Date : '), sg.I('1 February 2021', key='dateinput', size=(43,1))], [sg.T('==================================================')], [sg.Multiline(key='input', size=(50,10))], [sg.T('==================================================')], [sg.Button('DONE'), sg.Button('CLOSE', key='c2')]]
+write = [[sg.T('Enter today\'s events!')], 
+         [sg.T('Date : '), sg.I('1 February 2021', key='dateinput', size=(43,1))], 
+         [sg.T('==================================================')], 
+         [sg.Multiline(key='input', size=(50,10))], 
+         [sg.T('==================================================')], 
+         [sg.Button('DONE'), sg.Button('CLOSE', key='c2')]]
 
 layout = [[sg.Column(read, key='read', visible=True), sg.Column(write, key='write', visible=False)]]
 window = sg.Window('Journal', layout, margins=(10,10))

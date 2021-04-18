@@ -1,4 +1,5 @@
 # (Python) Projects i made
+###### Examples for absolute beginners.
 
 ### Available Project List :
 - <a href="RockPaperScissors">Rock, Paper, Scissors</a>

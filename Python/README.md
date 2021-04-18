@@ -1,4 +1,4 @@
-# Projects i made.
+# (Python) Projects i made
 
 ### Available Project List :
 - <a href="RockPaperScissors">Rock, Paper, Scissors</a>

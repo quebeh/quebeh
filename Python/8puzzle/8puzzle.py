@@ -168,7 +168,6 @@ while True:
                 window[f'{i}{i2}'].update(button_color='blue')
             elif printt((i,i2)) == 0 and pop == False:
                 window[f'{i}{i2}'].update(button_color='gray')
-
     if pop == False:
         now = datetime.now()
         remain = now - start

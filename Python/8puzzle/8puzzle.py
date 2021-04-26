@@ -50,8 +50,9 @@ def shuffle():
         last_piece = kosong["pos"]
 
 
-def printt(pos):
-    return default[pos[0]][pos[1]]['name']
+def printt(position):
+    return default[position[0]][position[1]]['name']
+
 
 sg.theme_background_color('white')
 sg.theme_button_color(('white', 'blue'))
@@ -66,7 +67,7 @@ shuffle()
 pop = False
 start = datetime.now()
 while True:
-    event, values = window.read(timeout=50)
+    event, values = window.read(timeout=5)
     if event in ('EXIT', sg.WIN_CLOSED):
         break
 
@@ -91,6 +92,9 @@ while True:
             window[i].update(button_color='blue')
         window.read(timeout=0)
         pop = False
+        for i in range(5):
+            window['time'].update(f'{5-i}')
+            window.read(timeout=1000)
         start = datetime.now()
 
     if event == 'SOLVE':
@@ -106,6 +110,7 @@ while True:
             window[i].update(button_color='blue')
             window.read(timeout=50)
         pop = True
+        window['time'].update('Solved by Machine')
 
     if event in ['00', '01', '02', '10', '11', '12', '20', '21', '22']:
         try:
@@ -147,6 +152,7 @@ while True:
             window[i].update(button_color='blue')
             window.read(timeout=100)
         pop=True
+        window['time'].update(f'Solved ({minutes}:{seconds}:{microsec})')
 
     for i in range(3):
         for i2 in range(3):

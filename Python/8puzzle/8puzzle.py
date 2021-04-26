@@ -90,6 +90,13 @@ while True:
         window.read(timeout=100)
         for i in ['00', '01', '02', '10', '12', '20', '21', '22']:
             window[i].update(button_color='blue')
+        for i in range(3):
+            for i2 in range(3):
+                window[f'{i}{i2}'].update(printt((i, i2)))
+                if printt((i, i2)) != 0:
+                    window[f'{i}{i2}'].update(button_color='blue')
+                elif printt((i, i2)) == 0 and pop == False:
+                    window[f'{i}{i2}'].update(button_color='gray')
         window.read(timeout=0)
         pop = False
         for i in range(5):
@@ -161,6 +168,7 @@ while True:
                 window[f'{i}{i2}'].update(button_color='blue')
             elif printt((i,i2)) == 0 and pop == False:
                 window[f'{i}{i2}'].update(button_color='gray')
+
     if pop == False:
         now = datetime.now()
         remain = now - start

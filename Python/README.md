@@ -1,9 +1,7 @@
 # (Python) Projects i made
 
-### Available Project List :
+### Available Projects:
 - <a href="RockPaperScissors">Rock, Paper, Scissors</a>
 - <a href="PasswordGenerator">Password Generator</a>
-
-### Big projects Available :
 - <a href="Journal">Journal</a>
 - <a href="8puzzle">8 Puzzle</a>

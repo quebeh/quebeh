@@ -1,4 +1,4 @@
-# Hello! i'm quebeh.
+# Hello!
 
 Mid-school Programmer.
 

@@ -31,4 +31,4 @@ This method is used for storing / writing data to your Journal.
 1. The app asks you for a .json file to write to.
 2. After that, it would prompt you to the writing window just like the v1 version.
 
-###### Really simple! but hard to work on.
+###### Really simple!

@@ -1,5 +1,4 @@
 # Journal
-###### One of my biggest project.
 
 ### Version 1
 ###### This version only supports WRITING to txt files

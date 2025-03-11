@@ -1,10 +1,9 @@
 # Hello!
 
-Hi-school Programmer.
+Hi-school Programmer
 
-### Some programming languages i do:
+### My fields:
+- Unity Game Development
 - Python
 - C++
-- HTML, CSS, JS
-
-:)
+- Full-stack Web Development
